@@ -1,0 +1,190 @@
+/* General Styling */
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Product Details Wrapper */
+.product-details {
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Product Image Section */
+.product-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    text-align: center;
+    padding: 10px;
+}
+
+.product-image img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Product Info Section */
+.product-info {
+    flex: 2;
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.rating-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.product-brand {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.product-description {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Pricing */
+.product-price {
+    font-size: 26px;
+    font-weight: bold;
+    color: #e60000;
+    margin-bottom: 10px;
+}
+
+.discount-text {
+    font-size: 14px;
+    color: #666;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.tax-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Delivery Info */
+.delivery-info {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.in-stock {
+    color: green;
+    font-weight: bold;
+}
+
+/* Buttons */
+.button-section {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.add-to-cart,
+.buy-now {
+    padding: 12px 18px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    flex: 1;
+    text-align: center;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    background-color: #ff9900;
+    color: white;
+}
+
+.add-to-cart:hover {
+    background-color: #e68a00;
+}
+
+/* Buy Now Button */
+.buy-now {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.buy-now:hover {
+    background-color: #cc0000;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 18px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Toast Notification */
+.toast-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(18, 210, 244, 0.9);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.toast-container button {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,136 @@
+/* ======= Amazon-Style Cart Page ======= */
+
+/* Cart Page Container */
+.cart-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Loading Text */
+.loading-text {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Empty Cart Message */
+.empty-cart {
+    text-align: center;
+    font-size: 20px;
+    color: #444;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/* Cart Grid */
+.cart-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+/* Individual Cart Item */
+.cart-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.cart-item:hover {
+    transform: scale(1.02);
+}
+
+/* Cart Item Image */
+.cart-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 6px;
+    background: #f9f9f9;
+}
+
+/* Cart Item Details */
+.cart-info {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.cart-info h5 {
+    font-size: 16px;
+    color: #111;
+    margin-bottom: 5px;
+}
+
+.cart-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+/* Remove from Cart Button */
+.btn-remove {
+    background: #ff3333;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-remove:hover {
+    background: #cc0000;
+}
+
+/* Continue Shopping Button */
+.cart-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-continue {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-continue:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cart-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart-item {
+        width: 90%;
+    }
+
+    .btn-continue {
+        width: 100%;
+        text-align: center;
+    }
+}

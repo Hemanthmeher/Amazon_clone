@@ -1,0 +1,117 @@
+/* Wishlist Page */
+.wishlist-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Wishlist Grid */
+.wishlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Wishlist Item */
+.wishlist-item {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+}
+
+.wishlist-item:hover {
+    transform: scale(1.05);
+}
+
+/* Image Styling */
+.wishlist-image {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Product Info */
+h4 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 14px;
+    color: #b12704;
+    font-weight: bold;
+}
+
+/* Remove Button (Hidden by Default) */
+.remove-button {
+    background-color: #ff3333;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.remove-button:hover {
+    background-color: #cc0000;
+}
+
+/* Buttons Section */
+.wishlist-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Add Product Button (Purple) */
+.add-button {
+    background-color: #1e35df;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.add-button:hover {
+    background-color: #62b9e8;
+}
+
+/* Go to Home Button (Blue) */
+.home-button {
+    background-color:#e2166e;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-button:hover {
+    background-color:#e06699;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .wishlist-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}

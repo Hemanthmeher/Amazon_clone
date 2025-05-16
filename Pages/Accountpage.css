@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Amazon Ember", Arial, sans-serif;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+/* Account Container */
+.account-container {
+  width: 85%;
+  margin: auto;
+  padding: 20px;
+  margin-top: 90px; /* Ensures it appears below the navigation bar */
+}
+
+/* Back Button */
+.back-button {
+  text-decoration: none;
+  background-color: #0073e6;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+  background-color: #005bb5;
+  transform: scale(1.05);
+}
+
+/* Grid Layout */
+.account-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Larger and Flexible Cards */
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* Account Cards */
+.account-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 150px; /* Larger Card Size */
+  cursor: pointer;
+  border: 2px solid transparent;
+  text-decoration: none;
+  color: black;
+}
+
+.account-card:hover {
+  transform: translateY(-5px);
+  border: 2px solid #0073e6;
+  box-shadow: 0px 6px 18px rgba(0, 115, 230, 0.2);
+}
+
+/* Icon Styling */
+.icon {
+  font-size: 45px; /* Bigger Icons */
+  color: #0073e6;
+  margin-right: 25px;
+}
+
+/* Text Content */
+.text-content h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.text-content p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.4;
+}
